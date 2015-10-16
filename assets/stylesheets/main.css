@@ -1,0 +1,313 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+/* line 1, ../sass/_typography.sass */
+body {
+  font-family: "Oswald", sans-serif;
+  color: #484848;
+}
+
+/* line 5, ../sass/_typography.sass */
+h3 {
+  margin: 0 0 25px 0;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/* line 10, ../sass/_typography.sass */
+.tooltip {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 13, ../sass/_typography.sass */
+.tooltip-inner {
+  padding: 5px 15px;
+}
+
+/* line 17, ../sass/_typography.sass */
+.schedule p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* line 1, ../sass/_style.sass */
+.highlight, .schedule-wrap {
+  padding: 25px 20px 20px 20px;
+}
+
+/* line 4, ../sass/_style.sass */
+.highlight {
+  background: #fafafa;
+  border: 1px solid #CCCCCC;
+  border-radius: 10px;
+  position: relative;
+  height: 499px;
+}
+
+/* line 10, ../sass/_style.sass */
+.tag {
+  padding-left: 1px;
+}
+/* line 12, ../sass/_style.sass */
+.tag span {
+  background: white;
+  border: 1px solid #e1e1e1;
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 10px;
+}
+/* line 18, ../sass/_style.sass */
+.tag span i {
+  display: inline-block;
+  margin-left: 20px;
+  color: #7e7e7e;
+  line-height: 40px;
+}
+/* line 23, ../sass/_style.sass */
+.tag.blue {
+  border-left: 5px solid #4688f1;
+}
+/* line 25, ../sass/_style.sass */
+.tag.red {
+  border-left: 5px solid #e8443b;
+}
+/* line 27, ../sass/_style.sass */
+.tag.green {
+  border-left: 5px solid #3aa756;
+}
+/* line 29, ../sass/_style.sass */
+.tag.yellow {
+  border-left: 5px solid #fdcd2f;
+}
+
+/* line 32, ../sass/_style.sass */
+ul.rating {
+  text-align: right;
+  padding: 0;
+}
+/* line 35, ../sass/_style.sass */
+ul.rating li {
+  list-style: none;
+  display: inline-block;
+  line-height: 40px;
+  padding: 0;
+}
+/* line 40, ../sass/_style.sass */
+ul.rating li:first-child, ul.rating li:last-child {
+  padding: 0;
+}
+/* line 42, ../sass/_style.sass */
+ul.rating i {
+  font-size: 16px;
+  background: none;
+  color: #CCCCCC;
+}
+/* line 47, ../sass/_style.sass */
+ul.rating .selected i {
+  background: linear-gradient(#fdcd2f, #fab349);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* line 52, ../sass/_style.sass */
+.row-footer {
+  background: #F1F1F1;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 0px;
+  border-top: 1px solid #CCCCCC;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  padding: 0;
+}
+/* line 64, ../sass/_style.sass */
+.row-footer a {
+  line-height: 3;
+}
+
+/* line 67, ../sass/_style.sass */
+button {
+  border: 0;
+  background: none;
+  outline: none;
+  padding: 0;
+}
+
+/* line 73, ../sass/_style.sass */
+.map {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+/* line 77, ../sass/_style.sass */
+.map img {
+  width: 100%;
+}
+/* line 79, ../sass/_style.sass */
+.map .map-pin {
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  position: absolute;
+}
+/* line 84, ../sass/_style.sass */
+.map .map-pin.america {
+  top: 22%;
+  left: 12%;
+  background: #e8443b;
+}
+/* line 88, ../sass/_style.sass */
+.map .map-pin.asia {
+  top: 22%;
+  right: 26%;
+  background: #fdcd2f;
+}
+/* line 92, ../sass/_style.sass */
+.map .map-pin.europe {
+  top: 21%;
+  left: 42%;
+  background: #3aa756;
+}
+/* line 96, ../sass/_style.sass */
+.map .map-pin.africa {
+  bottom: 40%;
+  left: 48%;
+  background: #4688f1;
+}
+/* line 100, ../sass/_style.sass */
+.map .map-pin.oceania {
+  bottom: 20%;
+  right: 10%;
+  background: #f2801b;
+}
+
+/* line 105, ../sass/_style.sass */
+.location {
+  padding: 20px;
+}
+/* line 107, ../sass/_style.sass */
+.location li {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+/* line 111, ../sass/_style.sass */
+.location li:before {
+  content: " ";
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+/* line 119, ../sass/_style.sass */
+.location li.africa:before {
+  background: #4688f1;
+}
+/* line 122, ../sass/_style.sass */
+.location li.asia:before {
+  background: #fdcd2f;
+}
+/* line 125, ../sass/_style.sass */
+.location li.oceania:before {
+  background: #f2801b;
+}
+/* line 128, ../sass/_style.sass */
+.location li.europe:before {
+  background: #3aa756;
+}
+/* line 131, ../sass/_style.sass */
+.location li.america:before {
+  background: #e8443b;
+}
+
+/* line 134, ../sass/_style.sass */
+.schedule {
+  padding: 0;
+  list-style: none;
+}
+/* line 137, ../sass/_style.sass */
+.schedule li {
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  border-left: 1px solid #CCCCCC;
+  background: #fafafa;
+  position: relative;
+}
+/* line 143, ../sass/_style.sass */
+.schedule li:last-child {
+  border-bottom: 1px solid #CCCCCC;
+  border-radius: 0 0 10px 10px;
+}
+/* line 146, ../sass/_style.sass */
+.schedule li:first-child {
+  border-radius: 0 10px 0 0;
+}
+/* line 148, ../sass/_style.sass */
+.schedule li .time {
+  padding: 0;
+  line-height: 30px;
+  color: #737373;
+}
+/* line 152, ../sass/_style.sass */
+.schedule li .time:before {
+  font-family: fontAwesome;
+  content: "";
+  color: #4dbde4;
+  background: #fafafa;
+  border-left: 1px solid #CCCCCC;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  border-right: 1px solid #fafafa;
+  border-radius: 30px 0 0 30px;
+  -moz-border-radius: 30px 0 0 30px;
+  height: 30px;
+  width: 15px;
+  display: inline-block;
+  padding-left: 8px;
+  font-size: 18px;
+  position: relative;
+  left: -15px;
+  top: -1px;
+}
+/* line 171, ../sass/_style.sass */
+.schedule p {
+  padding: 7px 15px 11px 15px;
+  margin: 0px;
+}
+
+@media screen and (min-width: 1400px) {
+  /* line 177, ../sass/_style.sass */
+  .schedule p {
+    padding: 7px 15px 27px 15px;
+  }
+}
+/* line 1, ../sass/_layout.sass */
+section {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  /* line 5, ../sass/_layout.sass */
+  .highlight {
+    margin-bottom: 20px;
+  }
+
+  /* line 8, ../sass/_layout.sass */
+  .location {
+    margin-top: 20px;
+  }
+  /* line 10, ../sass/_layout.sass */
+  .location li {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 14, ../sass/_layout.sass */
+  .container {
+    width: 1440px;
+  }
+}

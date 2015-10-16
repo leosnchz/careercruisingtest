@@ -1,0 +1,178 @@
+.highlight, .schedule-wrap
+  padding: 25px 20px 20px 20px
+
+.highlight
+  background: $highlight-bg
+  border: 1px solid #CCCCCC
+  border-radius: 10px
+  position: relative
+  height: 499px
+.tag
+  padding-left: 1px
+  span
+    background: white
+    border: 1px solid $tag-border
+    display: inline-block
+    line-height: 40px
+    padding: 0 10px
+    i
+      display: inline-block
+      margin-left: 20px
+      color: #7e7e7e
+      line-height: 40px
+  &.blue
+    border-left: 5px solid $blue
+  &.red
+    border-left: 5px solid $red
+  &.green
+    border-left: 5px solid $green
+  &.yellow
+    border-left: 5px solid $yellow
+
+ul.rating
+  text-align: right
+  padding: 0
+  li
+    list-style: none
+    display: inline-block
+    line-height: 40px
+    padding: 0
+    &:first-child, &:last-child
+      padding: 0
+  i
+    font-size: 16px
+    background: none
+    color: #CCCCCC
+  .selected
+    i
+      background: linear-gradient($yellow, $dark-yellow)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+
+.row-footer
+  background: $highlight-footer-bg
+  margin-left: -20px
+  margin-right: -20px
+  margin-bottom: 0px
+  border-top: 1px solid #CCCCCC
+  position: absolute
+  width: 100%
+  bottom: 0
+  border-radius: 0 0 10px 10px
+  text-align: center
+  padding: 0
+  a
+    line-height: 3
+
+button
+  border: 0
+  background: none
+  outline: none
+  padding: 0
+
+.map
+  display: block
+  width: 100%
+  position: relative
+  img
+    width: 100%
+  .map-pin
+    height: 12px
+    width: 12px
+    border-radius: 100%
+    position: absolute
+    &.america
+      top: 22%
+      left: 12%
+      background: $red
+    &.asia
+      top: 22%
+      right: 26%
+      background: $yellow
+    &.europe
+      top: 21%
+      left: 42%
+      background: $green
+    &.africa
+      bottom: 40%
+      left: 48%
+      background: $blue
+    &.oceania
+      bottom: 20%
+      right: 10%
+      background: $orange
+
+.location
+  padding: 20px
+  li
+    list-style: none
+    padding: 0
+    line-height: 1.8
+    &:before
+      content: " "
+      height: 12px
+      width: 12px
+      display: inline-block
+      border-radius: 100%
+      margin-right: 10px
+    &.africa
+      &:before
+        background: $blue
+    &.asia
+      &:before
+        background: $yellow
+    &.oceania
+      &:before
+        background: $orange
+    &.europe
+      &:before
+        background: $green
+    &.america
+      &:before
+        background: $red
+
+.schedule
+  padding: 0
+  list-style: none
+  li
+    border-top: 1px solid #CCCCCC
+    border-right: 1px solid #CCCCCC
+    border-left: 1px solid #CCCCCC
+    background: $highlight-bg
+    position: relative
+    &:last-child
+      border-bottom: 1px solid #CCCCCC
+      border-radius: 0 0 10px 10px
+    &:first-child
+      border-radius: 0 10px 0 0
+    .time
+      padding: 0
+      line-height: 30px
+      color: #737373
+      &:before
+        font-family: fontAwesome
+        content: "\f017"
+        color: #4dbde4
+        background: $highlight-bg
+        border-left: 1px solid #CCCCCC
+        border-top: 1px solid #CCCCCC
+        border-bottom: 1px solid #CCCCCC
+        border-right: 1px solid $highlight-bg
+        border-radius: 30px 0 0 30px
+        -moz-border-radius: 30px 0 0 30px
+        height: 30px
+        width: 15px
+        display: inline-block
+        padding-left: 8px
+        font-size: 18px
+        position: relative
+        left: -15px
+        top: -1px
+  p
+    padding: 7px 15px 11px 15px
+    margin: 0px
+
+@media screen and (min-width: 1400px)
+  .schedule
+    p
+      padding: 7px 15px 27px 15px
